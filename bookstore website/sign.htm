@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <link rel="icon" href="logoic.png">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="StyleSheet" type="text/css" href="sign.css" />
+    <link rel="icon" href="logo.png">
+
+    <TITLE>Sign up</TITLE>
+
+</HEAD>
+<BODY>
+
+    <nav>
+        <a href="#" class="logo">
+
+            <img class="logohf" src="fulllogo.png" />
+        </a>
+        <ul class="menu-2">
+
+            <li>  <i class="fa fa-home"></i>  </li>
+            <li>
+                <i><a class="fa-solid fa-book"> </a></i>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="E-Books.htm"> English Books</a> </li>
+                        <li> <a href="A-books.htm"> Arabic Books</a> </li>
+                        <li><a href="K-Books.htm"> kids Books</a> </li>
+                    </ul>
+
+                </div>
+            </li>
+            <li> </li>
+            <!--<li><a href="account.htm"> Account</a> </li>-->
+
+
+            <li>
+                <i class="fa-solid fa-home"></i>
+                <div class="sub-menu-1">
+
+                    <ul>
+                        <li><a href="account.htm"> My profile </a> </li>
+
+                    </ul>
+                    <ul>
+                        <li><a href="final bookstore.html"> Log Out </a> </li>
+
+                    </ul>
+                </div>
+
+
+            </li>
+
+            <li><a> </a> </li>
+
+        </ul>
+    </nav>
+
+    <div class="rectangle">
+        <div class="formrec">
+            <div class="txtside">
+                <h1>Welcome!</h1>
+                <p><br />Sign up and begin your<br />journey with us!</p>
+            </div>
+            <div class="signbgclr">
+                <input type="button" id="signup_toggle_btn" value="Sign Up" class="btnbg specificbtn" />
+            </div>
+            <form class="frmsec" name="frm122">
+                <h1>Create Account</h1><br />
+                <input type="text" id="fname" name="firstname" placeholder="Name.." class="inputs">
+                <br />
+                <input type="email" id="em" name="email" placeholder="Email: example@domain.com" class="inputs">
+                <br />
+                <input type="password" id="pass" name="password" class="inputs" placeholder="Password">
+                <br />
+                <input type="password" id="pass2" name="password2" class="inputs" placeholder="Confirm Password">
+                <br />
+                <input type="submit" value="Sign Up" id="btnsub" class="specificbtn btntxt" />
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        //moving the bgcolor
+        const showSignUp = () => {
+            document.querySelector('.signbgclr').style.width = '40%';
+            document.querySelector('#signup_toggle_btn').style.display = 'none';
+            document.querySelector('.txtside').style.left = '7%';
+            document.querySelector('.frmsec').style.left = '27%';
+        }
+        document.querySelector('#signup_toggle_btn').addEventListener('click', showSignUp);
+        //checking passwords
+        const checkpss = (ev) => {
+            ev.preventDefault();  //to stop the form submitting
+            var ps = document.getElementById("pass").value;
+            var ps2 = document.getElementById("pass2").value;
+            if (document.frm122.email.value.indexOf("@") == -1 || document.frm122.email.value.indexOf(".") == -1) {
+                alert("Invalid Email.");
+            }
+            if (ps.length < 8) {
+                alert("Yours password is not long enough.");
+            }
+            if (ps2 !== ps) {
+                alert("Yours passwords do not match");
+            }
+            if (ps2 == ps && ps.length >= 8) {
+                alert("Sign up successful.");
+                document.location.href = "final bookstore.html";
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('btnsub').addEventListener('click', checkpss);
+        });
+    </script>
+
+
+</BODY>
+</HTML>

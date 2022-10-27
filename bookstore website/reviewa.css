@@ -1,0 +1,103 @@
+BODY
+{
+    display:flex;
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+.rev-section
+{
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #766d52;
+    margin-bottom: .5rem;
+}
+
+.note {
+    font-size: 1.1rem;
+    color: #392613;
+    font-style: italic;
+}
+
+.reviews
+{
+    margin: 2rem auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.review
+{
+    margin: 0 1rem;
+    min-width: 300px;
+    flex: 1;
+}
+
+.head-review {
+    margin: 1.75rem auto;
+    width: 150px;
+    height:150px;
+        
+}
+
+
+
+.rvw {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px #261a0d;
+}
+
+.body-review {
+    background-color: #d9b38c;
+    padding: 2.5rem;
+    box-shadow: 2px 2px 10px 3px #261a0d;
+}
+
+.name-review
+{
+    font-size: 1.5rem;
+    color:black;
+    margin-bottom: .25rem;
+}
+
+.place-review {
+    color: #766d52;
+    font-style:italic;
+}
+
+.rating
+{
+    color:#ffd966;
+    margin: 0rem 0;
+}
+
+.desc-review {
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: #734d26;
+}
+
+@media (max-width: 678px )
+{
+    .review
+    {
+        margin-top: 1.5rem;
+    }
+}
+

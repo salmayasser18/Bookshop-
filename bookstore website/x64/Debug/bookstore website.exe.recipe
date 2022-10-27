@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\salma elezaby\web project\bookstore website\x64\Debug\bookstore website.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>D:\salma elezaby\web project\bookstore website\bookstore website\final bookstore.html</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\salma elezaby\web project\bookstore website\bookstore website\E-Books.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\salma elezaby\web project\bookstore website\bookstore website\A-books.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\salma elezaby\web project\bookstore website\bookstore website\account.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\salma elezaby\web project\bookstore website\bookstore website\admin.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\salma elezaby\web project\bookstore website\bookstore website\cart.html</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\salma elezaby\web project\bookstore website\bookstore website\sign.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\salma elezaby\web project\bookstore website\bookstore website\Reviews.htm</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>D:\salma elezaby\web project\bookstore website\bookstore website\K-Books.htm</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

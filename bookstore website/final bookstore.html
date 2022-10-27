@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ID = edge ">
+    <meta name="viewport" content="width = device - width , initial-scale = 1.0">
+    <script src="https://kit.fontawesome.com/fe2594b4aa.js" crossorigin="anonymous"></script>
+    <title> BookShop </title>
+
+    <link rel="icon" href="logo.png">
+
+    <style>
+        body {
+            background-color: #e6e6e6;
+        }
+    </style>
+
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" />
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+
+
+</head>
+<body>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Source+Serif+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <section class="main">
+
+        <nav>
+            <a href="#" class="logo">
+
+                <img class="logohf" src="fulllogo.png" />
+            </a>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu">
+                <li>  <a href="#" class="active "><i class="fa-solid fa-house icnz"></i> Home</a> </li>
+                <li>
+                    <a href="#" class="active "><i class="fa-solid fa-book icnz"></i> Books</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="E-Books.htm"> English Books</a> </li>
+                            <li> <a href="A-books.htm"> Arabic Books</a> </li>
+                            <li><a href="K-Books.htm"> kids Books</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="Reviews.htm"><i class="fa-solid fa-star"></i> Reviews</a> </li>
+                <li>
+                    <a href="#" class="active "> <i class="fa-solid fa-user icnz"></i>Account</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="account.htm"> Log in </a> </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="final bookstore.html"> Log Out </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <div class="header content">
+
+            <!--header text-->
+
+            <div class="header-text">
+
+
+                <br />
+                <br />
+                <br />
+
+                <h1>
+
+
+                    There is no friend as
+
+                    <span> loyal</span> as a  <span>   book </span>
+                </h1>
+
+                <p>
+                    BookShop gives a user read/write access to all components of Bookstore, including settings. and
+                    the ability to run day-to-day purchases in BookShop�processing orders
+                    (Point of Sale and online) and viewing reviews..
+
+
+                </p>
+
+
+            </div>
+
+            <a href="sign.htm" class="header-btn" > Sign up </a>
+
+
+        </div>
+
+
+
+
+    </section>
+
+    <div class="slider">
+        <div class="slides">
+
+
+
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+
+            <!--image slide-->
+
+            <div class="slide first">
+
+                <img src="pic1.jpg" alt="" />
+
+            </div>
+
+            <div class="slide ">
+
+                <img src="pic2.jpg" alt="" />
+
+            </div>
+
+            <div class="slide ">
+
+                <img src="pic3.jpg" alt="" />
+
+            </div>
+
+            <div class="slide ">
+
+                <img src="pic4.jpg" alt="" />
+
+            </div>
+
+
+            <!--automatic navigation-->
+
+            <div class="navigation-auto">
+
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+
+            </div>
+
+            <div class="navigation-auto">
+
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript">
+
+        var counter = 1;
+
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+
+            if (counter > 4) {
+                counter = 1;
+            }
+
+        }, 2500);
+
+    </script>
+
+
+    <!--section 2-->
+
+    <section class="about">
+
+        <div class="about-heading">
+
+            <h2> ABOUT BOOK </h2>
+            <p> lores ipsum , dolor sit amet consectetur adipisicing elit , solute dolore , commd esse construvter aliquid autem</p>
+
+
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+
+                <img src="bestsellerbg.jpg" />
+                <font>BEST SELLERS </font>
+
+                <p> lores ipsum , dolor sit amet consectetur adipisicing elit , solute dolore , commd esse construvter aliquid autem</p>
+
+                <a href="#"> Read more </a>
+            </div>
+
+            <div class="box">
+                <img src="newarrbg.jpg" />
+                <font> NEW ARRIVALS </font>
+
+                <p> lores ipsum , dolor sit amet consectetur adipisicing elit , solute dolore , commd esse construvter aliquid autem</p>
+                <a href="#"> Read more </a>
+
+            </div>
+
+            <div class="box">
+
+                <img src="classicsbg.jpg" />
+                <font> CLASSICS </font>
+                <p> lores ipsum , dolor sit amet consectetur adipisicing elit , solute dolore , commd esse construvter aliquid autem</p>
+
+                <a href="#"> Read more </a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="contact">
+
+        <h3> Subscribe to our NewsLetter </h3>
+        <div class="contact-input">
+
+            <input type="email" placeholder="Example@gmail.com" />
+            <a href="#"> Continue  </a>
+        </div>
+    </section>
+
+
+    <!--ROOOOO-->
+
+    <section class="arrivals" id="arrivals">
+        <h1 class="heading">
+            <span>
+                new arrives
+            </span>
+        </h1>
+        <div class="arrvals-slider">
+            <div class="wraper">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <div href="#" class="box ra ">
+                                <div class="image">
+                                    <img src="e1.jpeg" alt="" />
+                                </div>
+                                <div class="content">
+                                    <h3>the president is missing</h3>
+                                    <div class="price">$15.4 <span>$20.99</span></div>
+                                    <a href="#" class="btn"> Add to cart</a>
+                                    <div class="starts">
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div href="#" class="box ra">
+                                <div class="image">
+                                    <img src="e3.jpeg" alt="" />
+                                </div>
+                                <div class="content">
+                                    <h3>Harry Potter</h3>
+                                    <div class="price">$11.70 <span>$14.99</span></div>
+                                    <a href="#" class="btn"> Add to cart</a>
+                                    <div class="starts">
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div href="#" class="box ra">
+                                <div class="image">
+                                    <img src="e14.jpeg" alt="" />
+                                </div>
+                                <div class="content">
+                                    <h3>Five feet apart</h3>
+                                    <div class="price">$11.70 <span>$14.99</span></div>
+                                    <a href="#" class="btn"> Add to cart</a>
+                                    <div class="starts">
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div href="#" class="box ra">
+                                <div class="image">
+                                    <img src="e10.jpg" alt="" />
+                                </div>
+                                <div class="content">
+                                    <h3>Central park</h3>
+                                    <div class="price">$15.4 <span>$20.99</span></div>
+                                    <a href="#" class="btn"> Add to cart</a>
+                                    <div class="starts">
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div href="#" class="box ra">
+                                <div class="image">
+                                    <img src="a9.jpg" alt="" />
+                                </div>
+                                <div class="content">
+                                    <h3>بيت القبرصي</h3>
+                                    <div class="price">$20.20 <span>$23.99</span></div>
+                                    <a href="#" class="btn"> Add to cart</a>
+                                    <div class="starts">
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div href="#" class="box ra">
+                                <div class="image">
+                                    <img src="a11.png" alt="" />
+                                </div>
+                                <div class="content">
+                                    <h3>فتاة الياقة الزرقاء</h3>
+                                    <div class="price">$15.4 <span>$20.99</span></div>
+                                    <a href="#" class="btn"> Add to cart</a>
+                                    <div class="starts">
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div href="#" class="box ra">
+                                <div class="image">
+                                    <img src="a7.jpeg" alt="" />
+                                </div>
+                                <div class="content">
+                                    <h3>زائر منتصف الليل</h3>
+                                    <div class="price">$15.4 <span>$20.99</span></div>
+                                    <a href="#" class="btn"> Add to cart</a>
+                                    <div class="starts">
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div href="#" class="box ra">
+                                <div class="image">
+                                    <img src="a8.jpg" alt="" />
+                                </div>
+                                <div class="content">
+                                    <h3>كويكول</h3>
+                                    <div class="price">$13.00 <span>$17.99</span></div>
+                                    <a href="#" class="btn"> Add to cart</a>
+                                    <div class="starts">
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start"></i>
+                                        <i class="fas fa-start-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">Soigné Store</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="YouTube Logo.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="Spotify Logo.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="facebook Logo.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!--noooooooooooourrrrrrrrrrrrrr-->
+</body>
+</html>

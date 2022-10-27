@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <link rel="icon" href="logo.png">
+
+    <script src="https://kit.fontawesome.com/39d4956b21.js" crossorigin="anonymous"></script>
+
+    <style>
+    </style>
+    <title>Admin page</title>
+</head>
+<body>
+
+
+
+    <nav>
+
+        <a href="#" class="logoad">
+
+            <img class="logoadm" src="fulllogo.png" />
+        </a>
+
+        <ul class="menu-2">
+            <li class="search">
+                <div id="title"></div>
+                <div id="searchbox" al>
+                    <input type="text" placeholder="Searc...." />
+                    <input type="submit" value="Search" />
+                </div>
+            </li>
+            <li>  <a href="final bookstore.html" class="active "><i class="fa fa-home"></i> Home</a> </li>
+            <li>
+                <a href="#" class="active "><i class="fa-solid fa-book"></i> Books</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="E-Books.htm"> English Books</a> </li>
+                        <li> <a href="A-books.htm"> Arabic Books</a> </li>
+                        <li><a href="K-Books.htm"> kids Books</a> </li>
+                    </ul>
+
+                </div>
+            </li>
+            <li>  <a href="Reviews.htm" class="active "><i class="fa-solid fa-star"></i>Reviews</a> </li>
+            <li>
+                <a href="#" class="active "> <i class="fa-solid fa-user icnz"></i>Account</a>
+                <div class="sub-menu-1">
+
+                    <ul>
+                        <li>
+                            <a href="final bookstore.html"> Log Out </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            <li class="re" id=" =icon">
+                <div>
+
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+
+
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="containing">
+        <!--sidebar-->
+        <div id="sidebar">
+
+        </div>
+        <div id="main">
+            <div id="header">
+
+            </div>
+
+        </div>
+        <!--data-->
+        <div id="analytics">
+            <div class="cards">
+                <i class="fas fa-users icons"></i>
+                <br /><br /><br />
+
+                <!--<div>
+
+        <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=8029461&style=0006&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter" border="0" />
+        </a>
+    </div>-->
+
+                <div class="website-counter"></div>
+
+                <h4>visitor</h4>
+            </div>
+            <div class="cards">
+                <i class="fa-solid fa-check-double icons"></i>
+                <h4>27</h4>
+                <h4>Sold Books</h4>
+            </div>
+            <div class="cards">
+                <i class="fas fa-dollar-sign icons"></i>
+                <h4>106</h4>
+                <h4>Earnings</h4>
+            </div>
+        </div>
+        <!--some users info-->
+        <table id="table">
+            <tr>
+                <th>ID</th>
+                <th>USERNAME</th>
+                <th>EMAIL</th>
+                <th>STATUS</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>jane77</td>
+                <td>jane.a12@gmail.com</td>
+                <td>Offline</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>raihana_r3</td>
+                <td>raiha.ahmed@gmail.com</td>
+                <td>Online</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ahmed_sd</td>
+                <td>ahmed.saed@gmail.com</td>
+                <td>Online</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>ahmed_sd</td>
+                <td>ahmed.saed@gmail.com</td>
+                <td>Offline</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>zain_19</td>
+                <td>zain.mo9@gmail.com</td>
+                <td>Online</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
+<script>
+    var chk = document.getElementById("chk");
+    chk.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+    };
+
+
+</script>
+
+<script>
+    var counterContainer = document.querySelector(".website-counter");
+    var resetButton = document.querySelector("#reset");
+    var visitCount = localStorage.getItem("page_view");
+
+    // Check if page_view entry is present
+    if (visitCount) {
+        visitCount = Number(visitCount) + 1;
+        localStorage.setItem("page_view", visitCount);
+    } else {
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+    }
+    counterContainer.innerHTML = visitCount;
+
+    // Adding onClick event listener
+    resetButton.addEventListener("click", () => {
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+        counterContainer.innerHTML = visitCount;
+    });
+  
+</script>
